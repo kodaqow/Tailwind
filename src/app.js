@@ -13,5 +13,5 @@ app.use(express.json());
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`🚀 Server is flying smoothly at http://localhost:${PORT}`);
+  console.log(`Server is running at http://localhost:${PORT}`);
 });
