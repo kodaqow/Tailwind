@@ -1,9 +1,16 @@
 {
   "name": "tailwind",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "tailwind:watch": "npx @tailwindcss/cli -i ./public/css/input.css -o ./public/css/style.css --watch",
+    "security:check": "npm audit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,html,css}\""
   },
   "keywords": [],
   "author": "",
